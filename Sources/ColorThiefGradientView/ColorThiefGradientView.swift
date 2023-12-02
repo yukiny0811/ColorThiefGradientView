@@ -17,9 +17,11 @@ public struct GradientImageView: View {
                 quality: 1,
                 ignoreWhite: true
             ) else {
+            print("erorr1")
             return
         }
-        guard colors.count == 2 else {
+        guard colors.count >= 2 else {
+            print("erorr2")
             return
         }
         color1 = colors[0].makeUIColor()
