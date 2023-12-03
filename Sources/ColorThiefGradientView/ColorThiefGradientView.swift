@@ -14,7 +14,7 @@ public struct GradientImageView: View {
             .getPalette(
                 from: image,
                 colorCount: 2,
-                quality: 1,
+                quality: 8,
                 ignoreWhite: true
             ) else {
             print("erorr1")
